@@ -1,0 +1,38 @@
+{
+  "name": "hive-challenge",
+  "version": "0.0.1",
+  "description": "Hive Front-End Challenge",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Sass",
+    "HTML",
+    "Responsive"
+  ],
+  "author": "Rodrigo Romero",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "acorn": "^6.1.1",
+    "autoprefixer": "^9.4.9",
+    "babel-loader": "^8.0.5",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.10",
+    "del": "^4.0.0",
+    "glob": "^7.1.3",
+    "gulp": "^4.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-newer": "^1.4.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "moment": "^2.24.0",
+    "sharp": "^0.21.3",
+    "webpack": "^4.29.6",
+    "webpack-stream": "^5.2.1"
+  }
+}
