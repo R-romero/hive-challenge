@@ -1,0 +1,39 @@
+<svg
+          class="nav logo"
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 231 54.6"
+          style="enable-background:new 0 0 231 54.6;"
+          xml:space="preserve"
+        >
+          <style type="text/css">
+            .st0 {
+              fill: #2d3a4b;
+            }
+            .st3 {
+              fill: #ffffff;
+            }
+            .st4 {
+              fill: #fde428;
+            }
+          </style>
+          <g>
+            <text
+              transform="matrix(1.0071 0 0 1 0 41.4116)"
+              class="st0 st1 st2"
+            >
+              EC SHOP
+            </text>
+            <circle class="st3" cx="76.7" cy="24.3" r="23.5" />
+            <text
+              transform="matrix(1.0071 0 0 1 55.5947 41.6465)"
+              class="st4 st1 st2"
+            >
+              O
+            </text>
+          </g>
+        </svg>
