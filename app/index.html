@@ -4,40 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      content="Front-end challenge from Hive Technology"
+      name="description"
+    />
+    <meta content="front-end, SCSS, Javascript, Jquery, shop" name="keywords" />
+    <title>Hive Challenge</title>
     <link
       rel="stylesheet"
       type="text/css"
       href="//fonts.googleapis.com/css?family=Playfair+Display"
     />
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Hive Challenge</title>
   </head>
+
   <body>
-    <div class="wrapper head">
-      <div class="content head">
+    <h1 class="hide">Ecoshop</h1>
+    <header class="wrapper head">
+      <div class="nav toggle">
         <svg
-          class="logo"
-          version="1.1"
-          id="Layer_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 231 54.6"
-          style="enable-background:new 0 0 231 54.6;"
-          xml:space="preserve"
+          class="menu-toggle"
+          width="1.15em"
+          height="1em"
+          viewBox="0 0 1024 896"
         >
-          <style type="text/css">
-            .st0 {
-              fill: #2d3a4b;
-            }
-            .st3 {
-              fill: #ffffff;
-            }
-            .st4 {
-              fill: #fde428;
-            }
-          </style>
+          <path
+            d="M27 130q-4-4-7-9t-4-10.5T15 98q0-19 12-31t31-12h913q19 0 31 12t12 31-12 31.5-31 12.5H58q-19 0-31-12zm975 
+                  285q12 12 12 31t-12 31-31 12H58q-19 0-31-12-2-2-4-5t-3.5-6-2.5-6-1.5-6.5-.5-7.5q0-19 12-31t31-12h913q19 0 31 12zm0 
+                  347q12 12 12 31t-12 31.5-31 12.5H58q-19 0-31-12-2-2-3.5-4.5l-3-5-2.5-5-2-5.5-1-5.5V793q0-19 12-31t31-12h913q18 0 31 12z"
+            fill="#2d3a4b"
+          />
+        </svg>
+        <svg class="nav logo" viewBox="0 0 231 54.6">
           <g>
             <text
               transform="matrix(1.0071 0 0 1 0 41.4116)"
@@ -54,133 +55,639 @@
             </text>
           </g>
         </svg>
-        <ul class="nav-bar">
-          <li class="nav-item"><a>Products</a></li>
-          <li class="nav-item"><a>Store</a></li>
-          <li class="nav-item"><a>Designer</a></li>
-          <li class="nav-item"><a>Contact</a></li>
-          <li class="nav-item">
-            <ul class="nav-bar">
-              <li class="nav-item icon">
-                <a>
-                  <svg
-                    width="1em"
-                    height="1em"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 1024 1024"
-                  >
-                    <path
-                      d="M512 64q39 0 80.5 15.5t72.5 39 51 52 20 53.5v160q0 57-24 127t-71 106q-8 7-14 16.5t-8.5 20T617 675q5 36 37 51l279 132 2 .5 4 1.5 5 3 5.5 4.5 5 6.5 3.5 10 1 13v62l-895 1v-65q0-25 27-37l281-133q32-15 36.5-50.5T385 617q-46-37-71.5-107.5T288 384V224q0-33 33-70.5T407 90t105-26zm0-64q-69 0-136.5 33.5t-109.5 86T224 224v160q0 65 30.5 149.5T345 667L64 800q-3 1-7 3t-15 9-19.5 14T7 843.5 0 863v97q0 26 18.5 44.5T64 1023h896q26 0 44.5-18.5T1023 960v-97q0-10-6.5-20.5t-16-18T982 811t-16-9l-6-2-279-133q60-47 89.5-130T800 384V224q0-39-25.5-79.5T709 72t-93-52T512 0z"
-                      fill="#2d3a4b"
-                    />
-                    <rect
-                      x="0"
-                      y="0"
-                      width="1024"
-                      height="1024"
-                      fill="rgba(0, 0, 0, 0)"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="nav-item icon">
-                <a>
-                  <svg
-                    width="1.04em"
-                    height="1em"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 1024 992"
-                  >
-                    <path
-                      d="M1015.5 267.5Q1006 254 990 254H311L259 77q-7-24-19-41t-25.5-24T191 2.5 171 0H34Q21 0 12 9T3 32q0 8 4 15.5T18.5 59 34 63h137q4 0 7.5 1t9.5 8.5T198 95l177 650q2 6 6.5 11.5T392 765t13 3h432q10 0 18.5-6t11.5-15l153-450q5-16-4.5-29.5zM815 704H430L328 318h616zm-63 128q-33 0-56.5 23.5T672 912t23.5 56.5T752 992t56.5-23.5T832 912t-23.5-56.5T752 832zm-288 0q-22 0-40.5 11t-29 29-10.5 40q0 33 23.5 56.5T464 992t56.5-23.5T544 912q0-8-1.5-16t-4.5-15-7.5-13.5-10-12-12-10T495 838t-15-4.5-16-1.5z"
-                      fill="#2d3a4b"
-                    />
-                    <rect
-                      x="0"
-                      y="0"
-                      width="1024"
-                      height="992"
-                      fill="rgba(0, 0, 0, 0)"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="nav-item icon">
-                <a>
-                  <svg
-                    width="1.02em"
-                    height="1em"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 1040 1024"
-                  >
-                    <path
-                      d="M1031 969L720 656q93-111 93-256 0-109-53.5-201t-146-145.5T412.5 0 212 53.5 66.5 199 13 400t53.5 201T212 746.5 413 800q149 0 262-98l310 312q10 10 23 10t22.5-9.5 9.5-23-9-22.5zM413 737q-92 0-169.5-45.5T121 568.5 76 400t45-168.5 122.5-123 169-45.5 169 45.5 122.5 123T749 400q0 39-9 77t-25.5 71-39.5 62.5-52 52.5-62 39.5-71 25.5-77 9z"
-                      fill="#2d3a4b"
-                    />
-                    <rect
-                      x="0"
-                      y="0"
-                      width="1040"
-                      height="1024"
-                      fill="rgba(0, 0, 0, 0)"
-                    />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
       </div>
-    </div>
+      <nav>
+        <h2 class="hide">Page Header Navigation</h2>
+        <div class="nav-links">
+          <ul class="nav menu">
+            <li class="nav item"><a href="">Products</a></li>
+            <li class="nav item"><a href="">Store</a></li>
+            <li class="nav item"><a href="">Designer</a></li>
+            <li class="nav item"><a href="">Contact</a></li>
+            <li class="nav sub">
+              <ul class="nav menu sub">
+                <li class="nav icon">
+                  <a href="#">
+                    <object
+                      data="./images/icons/account.svg"
+                      type="image/svg+xml"
+                    ></object>
+                  </a>
+                </li>
+                <li class="nav icon">
+                  <a href="#">
+                    <object
+                      data="./images/icons/cart.svg"
+                      type="image/svg+xml"
+                    ></object>
+                  </a>
+                </li>
+                <li class="nav icon">
+                  <a href="#">
+                    <object
+                      data="./images/icons/search-nav.svg"
+                      type="image/svg+xml"
+                    ></object>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="wrapper featured">
+      <div class="featured background">
+        <div class="featured content">
+          <img
+            class="featured image"
+            src="./images/feature-bike.png"
+            alt="Featured Bycicle"
+          />
+          <header class="featured headers">
+            <p class="featured card desc">The Latest Product from Ecoshop</p>
+            <p class="featured card price"><sup>$</sup>299</p>
+            <h1 class="featured card title">
+              Featured<br />
+              Cycle
+            </h1>
+            <a class="featured card link">Shop</a>
+            <div class="featured card arrows">
+              <object
+                data="./images/icons/arrow.svg"
+                type="image/svg+xml"
+              ></object>
+              <object
+                data="./images/icons/arrow.svg"
+                type="image/svg+xml"
+                style="transform: rotate(180deg)"
+              ></object>
+            </div>
+          </header>
+        </div>
+      </div>
+    </section>
 
-    <div class="wrapper arrival">
-      <div class="arrival-background">
-        <div class="content arrival">
-          <img class="card-image" src="./images/feature-bike.png" alt="" />
-          <div class="card-headers">
-            <p class="card desc">The Latest Product from Ecoshop</p>
-            <p class="card price"><sup>$</sup>299</p>
-            <p class="card title">
-              FEATURED<br />
-              CYCLE
+    <section class="wrapper arrival overflow">
+      <div class="arrival headers">
+        <h2>New Arrival</h2>
+        <p>
+          Occaecat consequat dolor culpa minim consequat sint dolore duis qui
+          sit quis. Non consequat non enim laborum.
+        </p>
+      </div>
+      <div class="arrival items">
+        <div class="arrival item">
+          <img src="./images/arrival-chair.png" alt="" />
+          <h3 class="arrival title">Wooden Chair</h3>
+          <p class="arrival sub">Lorem ipsum dolor sit amet.</p>
+          <div class="arrival hover">
+            <p class="arrival hover price">
+              <span><sup>$</sup>299</span>
             </p>
-            <a class="card link">SHOP</a>
-            <div class="card arrows">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="33px"
-                height="23px"
-              >
-                <path
-                  fill-rule="evenodd"
-                  fill="rgb(0, 0, 0)"
-                  d="M11.151,0.756 L11.975,1.610 L3.023,10.896 L32.469,10.896 L32.469,12.104 L3.021,12.104 L11.975,21.389 L11.151,22.244 L0.793,11.501 L11.151,0.756 Z"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="33px"
-                height="23px"
-              >
-                <path
-                  fill-rule="evenodd"
-                  fill="rgb(0, 0, 0)"
-                  d="M21.848,0.756 L21.025,1.610 L29.977,10.896 L0.531,10.896 L0.531,12.104 L29.979,12.104 L21.025,21.389 L21.848,22.244 L32.206,11.501 L21.848,0.756 Z"
-                />
-              </svg>
+            <div class="arrival hover search">
+              <div>
+                <object
+                  data="./images/icons/search.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
             </div>
           </div>
         </div>
-        <div class="content card-context">
-          <h2>NEW ARRIVAL</h2>
-          <p>
-            Occaecat consequat dolor culpa minim consequat sint dolore duis qui
-            sit quis. Non consequat non enim laborum.
-          </p>
+        <div class="arrival item">
+          <img src="./images/arrival-sofa.png" alt="" />
+          <h3 class="arrival title">Minimalist Woo Toys</h3>
+          <p class="arrival sub">Lorem ipsum dolor sit amet.</p>
+          <div class="arrival hover">
+            <p class="arrival hover price">
+              <span><sup>$</sup>299</span>
+            </p>
+            <div class="arrival hover search">
+              <div>
+                <object
+                  data="./images/icons/search.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrival item">
+          <img src="./images/arrival-item.png" alt="" />
+          <h3 class="arrival title">Concrete Shaving Kit</h3>
+          <p class="arrival sub">Lorem ipsum dolor sit amet.</p>
+          <div class="arrival hover">
+            <p class="arrival hover price">
+              <span><sup>$</sup>299</span>
+            </p>
+            <div class="arrival hover search">
+              <div>
+                <object
+                  data="./images/icons/search.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrival item">
+          <img src="./images/arrival-chair.png" alt="" />
+          <h3 class="arrival title">Paragon Pendant</h3>
+          <p class="arrival sub">Lorem ipsum dolor sit amet.</p>
+          <div class="arrival hover">
+            <p class="arrival hover price">
+              <span><sup>$</sup>299</span>
+            </p>
+            <div class="arrival hover search">
+              <div>
+                <object
+                  data="./images/icons/search.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrival item">
+          <img src="./images/arrival-sofa.png" alt="" />
+          <h3 class="arrival title">Crative Lamp</h3>
+          <p class="arrival sub">Lorem ipsum dolor sit amet.</p>
+          <div class="arrival hover">
+            <p class="arrival hover price">
+              <span><sup>$</sup>299</span>
+            </p>
+            <div class="arrival hover search">
+              <div>
+                <object
+                  data="./images/icons/search.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrival item">
+          <img src="./images/arrival-item.png" alt="" />
+          <h3 class="arrival title">Eco Friendly</h3>
+          <p class="arrival sub">Lorem ipsum dolor sit amet.</p>
+          <div class="arrival hover">
+            <p class="arrival hover price">
+              <span><sup>$</sup>299</span>
+            </p>
+            <div class="arrival hover search">
+              <div>
+                <object
+                  data="./images/icons/search.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrival item">
+          <img src="./images/arrival-chair.png" alt="" />
+          <h3 class="arrival title">Geometry Stool</h3>
+          <p class="arrival sub">Lorem ipsum dolor sit amet.</p>
+          <div class="arrival hover">
+            <p class="arrival hover price">
+              <span><sup>$</sup>299</span>
+            </p>
+            <div class="arrival hover search">
+              <div>
+                <object
+                  data="./images/icons/search.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrival item">
+          <img src="./images/arrival-sofa.png" alt="" />
+          <h3 class="arrival title">Ceramic Stone Vase</h3>
+          <p class="arrival sub">Lorem ipsum dolor sit amet.</p>
+          <div class="arrival hover">
+            <p class="arrival hover price">
+              <span><sup>$</sup>299</span>
+            </p>
+            <div class="arrival hover search">
+              <div>
+                <object
+                  data="./images/icons/search.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="wrapper popular">
+      <header class="header container">
+        <h2 class="header head">Popular Products</h2>
+        <p class="header desc">
+          Anim aliqua non commodo eu laboris commodo veniam sint anim. Mollit
+          quis veniam excepteur mollit culpa mollit laboris tempor nostrud. Elit
+          dolore ullamco enim nostrud esse exercitation et reprehenderit nulla
+          nulla fugiat quis.
+        </p>
+      </header>
+
+      <div class="popular carousel slider">
+        <div class="popular item">
+          <img
+            class="popular item image"
+            src="./images/popular-item.png"
+            alt=""
+          />
+          <h3 class="popular item title">Stone Cup</h3>
+          <p class="popular item sub">Lorem ipsum dolum sit amet.</p>
+          <p class="popular item price"><sup>$</sup>299</p>
+          <div class="popular hover">
+            <div class="popular hover search">
+              <div>
+                <object
+                  data="./images/icons/search.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular item">
+          <img
+            class="popular item image"
+            src="./images/popular-cup.png"
+            alt=""
+          />
+          <h3 class="popular item title">Gray Bag</h3>
+          <p class="popular item sub">Lorem ipsum dolum sit amet.</p>
+          <p class="popular item price"><sup>$</sup>299</p>
+          <div class="popular hover">
+            <div class="popular hover search">
+              <div>
+                <object
+                  data="./images/icons/search.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular item">
+          <img
+            class="popular item image"
+            src="./images/popular-chair.png"
+            alt=""
+          />
+          <h3 class="popular item title">Chiar</h3>
+          <p class="popular item sub">Lorem ipsum dolum sit amet.</p>
+          <p class="popular item price"><sup>$</sup>299</p>
+          <div class="popular hover">
+            <div class="popular hover search">
+              <div>
+                <object
+                  data="./images/icons/search.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular item">
+          <img
+            class="popular item image"
+            src="./images/popular-stool.png"
+            alt=""
+          />
+          <h3 class="popular item title">Stool</h3>
+          <p class="popular item sub">Lorem ipsum dolum sit amet.</p>
+          <p class="popular item price"><sup>$</sup>299</p>
+          <div class="popular hover">
+            <div class="popular hover search">
+              <div>
+                <object
+                  data="./images/icons/search.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular item">
+          <img
+            class="popular item image"
+            src="./images/popular-item.png"
+            alt=""
+          />
+          <h3 class="popular item title">Smol Item</h3>
+          <p class="popular item sub">Lorem ipsum dolum sit amet.</p>
+          <p class="popular item price"><sup>$</sup>299</p>
+          <div class="popular hover">
+            <div class="popular hover search">
+              <div>
+                <object
+                  data="./images/icons/search.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular item">
+          <img
+            class="popular item image"
+            src="./images/popular-cup.png"
+            alt=""
+          />
+          <h3 class="popular item title">Stone Cup</h3>
+          <p class="popular item sub">Lorem ipsum dolum sit amet.</p>
+          <p class="popular item price"><sup>$</sup>299</p>
+          <div class="popular hover">
+            <div class="popular hover search">
+              <div>
+                <object
+                  data="./images/icons/search.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular item">
+          <img
+            class="popular item image"
+            src="./images/popular-chair.png"
+            alt=""
+          />
+          <h3 class="popular item title">Chair</h3>
+          <p class="popular item sub">Lorem ipsum dolum sit amet.</p>
+          <p class="popular item price"><sup>$</sup>299</p>
+          <div class="popular hover">
+            <div class="popular hover search">
+              <div>
+                <object
+                  data="./images/icons/search.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular item">
+          <img
+            class="popular item image"
+            src="./images/popular-stool.png"
+            alt=""
+          />
+          <h3 class="popular item title">Table</h3>
+          <p class="popular item sub">Lorem ipsum dolum sit amet.</p>
+          <p class="popular item price"><sup>$</sup>299</p>
+          <div class="popular hover">
+            <div class="popular hover search">
+              <div>
+                <object
+                  data="./images/icons/search.svg"
+                  type="image/svg+xml"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrapper knowledge">
+      <header class="header container">
+        <h2 class="header head">Knowledge Share</h2>
+        <p class="header desc">
+          Anim aliqua non commodo eu laboris commodo veniam sint anim. Mollit
+          quis veniam excepteur mollit culpa mollit laboris tempor nostrud. Elit
+          dolore ullamco enim nostrud esse exercitation et reprehenderit nulla
+          nulla fugiat quis.
+        </p>
+      </header>
+      <div class="knowledge posts">
+        <article class="knowledge post">
+          <header>
+            <p class="knowledge month">December</p>
+            <p class="knowledge day">27</p>
+            <h3 class="knowledge title">Donec Commo is Vulputate</h3>
+          </header>
+          <p class="knowledge desc">
+            Magna irure quis ad elit veniam labore laborum tempor. Non consequat
+            esse reprehenderit laboris ex elit duis ad ea reprehenderit proident
+            fugiat. Sint reprehenderit ipsum id pariatur in dolore consectetur.
+            Voluptate dolore anim ea Lorem pariatur labore excepteur enim
+            exercitation duis mollit.
+          </p>
+          <footer class="knowledge author"><span>by</span> admin</footer>
+        </article>
+        <div class="knowledge divisor"></div>
+        <article class="knowledge post">
+          <header>
+            <p class="knowledge month">September</p>
+            <p class="knowledge day">09</p>
+            <h3 class="knowledge title">Sed Ullacorper Sapien</h3>
+          </header>
+          <p class="knowledge desc">
+            Magna irure quis ad elit veniam labore laborum tempor. Non consequat
+            esse reprehenderit laboris ex elit duis ad ea reprehenderit proident
+            fugiat. Sint reprehenderit ipsum id pariatur in dolore consectetur.
+            Voluptate dolore anim ea Lorem pariatur labore excepteur enim
+            exercitation duis mollit.
+          </p>
+          <footer class="knowledge author"><span>by</span> admin</footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrapper opinion reveal-animation">
+      <h2 class="hide">Opinion Quotes</h2>
+      <div class="opinion quote">
+        <span class="opinion quote symbol">“</span>
+        <span>
+          <blockquote class="opinion quote desc">
+            Veniam aute consectetur ullamco labore dolor sint pariatur fugiat
+            pariatur cillum. Duis Lorem nisi sit veniam id fugiat tempor ipsum
+            voluptate elit est exercitation nulla quis. Aute ex labore eiusmod
+            ipsum et cupidatat aute minim culpa nisi in laborum ex.
+          </blockquote>
+        </span>
+        <div class="opinion quote author">John Smith</div>
+      </div>
+      <img
+        class="opinion img"
+        src="./images/opinion-img.png"
+        alt="business person"
+      />
+    </section>
+
+    <footer>
+      <section class="wrapper about">
+        <div class="header container about">
+          <h2 class="header head">About Ecoshop</h2>
+          <p class=" header desc about">
+            Anim aliqua non commodo eu laboris commodo veniam sint anim. Mollit
+            quis veniam excepteur mollit culpa mollit laboris tempor nostrud.
+            Elit dolore ullamco enim nostrud esse exercitation et reprehenderit
+            nulla nulla fugiat quis.
+          </p>
+        </div>
+        <div class="about nav">
+          <a href="#">
+            <svg width="1.15em" height="1em" viewBox="0 0 1024 896">
+              <path
+                d="M684 95q80 0 135 56 62-12 116-43-21 64-80 98 55-6 105-28-12 18-26.5 34.5t-31 31T868 271q1 12 1 23 0 59-15.5 119t-45 117-75 106-102 86-130 58T346 801q-153 0-282-80 11 1 21.5 2t22.5 1q128 0 228-77-60-1-107-35.5T164 523q6 1 11.5 2t11.5 1.5 12 .5q25 0 48-7-63-12-105-61t-42-114v-2q39 21 83 22-25-16-43-38.5t-28.5-51T101 217q0-24 6.5-47t18.5-43q69 83 167.5 132T505 314q-5-20-5-41 0-74 54-126t130-52zm276 83zM684 31q-93 0-163 60.5T439 241Q278 209 175 86q-19-23-49-23l-5 1q-33 2-50 30-34 57-34 123 0 43 15 83-16 19-16 43v2q0 95 66 165-2 8-1.5 16.5T103 543q22 65 74 109-17 4-34.5 6t-34.5 2q-20 0-37-2l-7-1q-21 0-37.5 12T3 700q-7 21 .5 42.5T30 775q144 90 316 90 106 0 200-31.5T709 747t119.5-126.5 77-153T933 302q45-37 78-85 7-8 10-18t3-21q0-33-27-52 3-13 2-25t-7-23.5T976 58q-18-14-41-14-4 0-8 .5t-8 1.5-8 2.5-8 3.5q-31 19-67 29-68-50-152-50z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg width="0.54em" height="1em" viewBox="0 0 528 992">
+              <path
+                d="M342 64l6 1h83v96h-83q-7 0-13.5 1t-10.5 3.5-7.5 5.5-6 6-4 6.5-2 6l-1 5-.5 3.5v154h162l-23 96H303v480h-96V448H79v-96h128V203q0-31 8-55.5t21.5-38.5T264 85t31-14 27-5.5 20-1.5zm89 1zM342 0q-62 0-111 30-88 53-88 173v85H79q-26 0-45 19t-19 45v96q0 26 19 45t45 19h64v415q0 27 18.5 45.5T207 991h96q26 0 45-18.5t19-45.5V512h75q22 0 39-13t23-33l22-96q9-31-10-56.5T465 288h-98v-63h64q26 0 45-19t19-45V65q0-27-18.5-45.5T432 1h-82q-4-1-8-1z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg width="1em" height="1em" viewBox="0 0 1024 1024">
+              <path
+                d="M512 0q-52 0-101.5 10T315 40l-6 3Q171 103 85.5 230T0 512q0 104 40.5 198.5T150 874t163.5 109.5T512 1024t198.5-40.5T874 874t109.5-163.5T1024 512q0-83-26-161t-73.5-141T814 99.5 673 26 512 0zm448 512q0 2-.5 6t-.5 5q-155-42-326-4-5-12-10.5-23.5t-11-23.5-11.5-24-13-24q0-1-1.5-3.5T583 416q110-42 172.5-96T846 214q113 128 114 298zM798 167q-6 14-14.5 28t-28 36-44.5 42.5-66.5 44T553 359Q459 188 378 85q65-21 134-21 53 0 104.5 12.5T713 112t85 55zm-482-57q18 21 39 50t59 89.5T491 380q-70 21-140 33.5t-125.5 15-90 2T72 428q20-105 85-188.5T316 110zM64 512q0-9 1-21 40 5 88 5 183 0 369-59 2 4 4.5 8.5t4.5 8.5q10 20 20 40.5t19 41.5q-8 2-16.5 5l-17 6-16.5 6.5-16.5 7L486 568q-64 29-118 65.5t-89.5 73-56 62.5-34.5 51q-59-61-91.5-140.5T64 512zm172 352q10-18 25.5-39.5T309 767t85.5-74T513 626q13-6 27-11.5t27.5-10.5 27.5-9q67 172 88 331-40 16-83 25t-88 9q-154 0-276-96zm508 31q-23-154-86-316 51-10 102.5-12t91 2.5 62 9T953 587q-11 65-40 123t-72 105-97 80z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg width="1.18em" height="1em" viewBox="0 0 1056 896">
+              <path
+                d="M957 126q-13-9-35-16t-67-14.5-128.5-12T528 79q-348 0-415 41-79 47-95 277-2 30-3 57 1 34 4.5 71.5t12.5 92 30 98 50 61.5q67 40 416 40 364 0 429-46 26-19 44-60t26-92 10.5-89.5 3.5-76.5q-1-34-3.5-71.5t-10-92.5-25.5-99.5-45-63.5zm-38 593q-9 6-34 12.5t-119.5 14T528 753q-139 0-231-7t-117-12.5-35-11.5q-25-15-44.5-88T79 454q2-108 22-186.5t45-93.5q9-5 34-11t117-13 231-7q143 0 237.5 7.5t119.5 14 34 13.5q11 7 21 30t18 57.5 13 83.5 6 104q-1 108-18 178.5T919 719zM736 423L448 246q-16-10-32-.5T400 274v353q0 19 16 28 8 4 16 4 4 0 8.5-1t7.5-4l288-176q16-10 16-28-1-18-16-27zM464 570V330l194 120z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg width="1.15em" height="1em" viewBox="0 0 1024 896">
+              <path
+                d="M1023 168q1-3 1-6t-1-6l-2-6q-12-54-77-54H112q-30 0-57.5 11T13 137l-5 5q-10 11-7 26-1 2-1 4v516q0 40 36 76t76 36h832q37 0 58.5-34t21.5-78V170.5l-1-2.5zm-911-8h832L512 505 81 161q8-1 31-1zm832 576H112q-9 0-20.5-8T72 708.5 64 688V230l427 341q9 8 21 8 12-1 21-8l427-341v462q0 44-16 44z"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="wrapper newsletter">
+        <h2 class="header head news">Newsletter</h2>
+        <p class="header desc news">
+          Anim aliqua non commodo eu laboris commodo veniam sint anim. Mollit
+          quis veniam excepteur mollit culpa mollit laboris tempor nostrud.
+        </p>
+        <form class="newsletter form" action="#">
+          <input
+            placeholder="Enter your email address"
+            class="newsletter email"
+            type="email"
+            name=""
+            id=""
+          />
+          <button type="submit">Send Me</button>
+        </form>
+      </section>
+
+      <section class="wrapper footer">
+        <div class="footer info">
+          <div class="footer title">
+            <svg
+              class="footer title logo"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 231 54.6"
+              style="enable-background:new 0 0 231 54.6;"
+              xml:space="preserve"
+            >
+              <g>
+                <text
+                  transform="matrix(1.0071 0 0 1 0 41.4116)"
+                  class="st0f st1f st2f"
+                >
+                  EC SHOP
+                </text>
+                <circle class="st3f" cx="76.7" cy="24.3" r="23.5" />
+                <text
+                  transform="matrix(1.0071 0 0 1 55.5947 41.6465)"
+                  class="st4f st1f st2f"
+                >
+                  O
+                </text>
+              </g>
+            </svg>
+          </div>
+          <div class="footer item">
+            <object data="./images/icons/maps.svg" type=""></object>
+            <p>
+              Street No. 12 Newyork 12,<br />
+              MD - 123, USA.
+            </p>
+          </div>
+          <div class="footer item">
+            <object data="./images/icons/tel.svg" type=""></object>
+            <p>1.800.123.456789</p>
+          </div>
+          <div class="footer item">
+            <object data="./images/icons/email.svg" type=""></object>
+            <p>info@ecoshop.com</p>
+          </div>
+        </div>
+        <div class="footer links">
+          <h2 class="hide">Footer Navigation</h2>
+          <nav class="footer section">
+            <h2>Helpful Links</h2>
+            <ul>
+              <li><a href="">Products</a></li>
+              <li><a href="">Find a Store</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Press Kit</a></li>
+            </ul>
+          </nav>
+          <nav class="footer section">
+            <h2>Shop</h2>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Shipping Methods</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Retailer</a></li>
+            </ul>
+          </nav>
+          <nav class="footer section">
+            <h2>Account</h2>
+            <ul>
+              <li><a href="">Login</a></li>
+              <li><a href="">My Account</a></li>
+              <li><a href="">My Cart</a></li>
+              <li><a href="">Wishlist</a></li>
+              <li><a href="">Checkout</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/slick/slick.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

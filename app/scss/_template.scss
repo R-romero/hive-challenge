@@ -1,4 +1,6 @@
 /* Template */
+@import "mixins";
+
 * {
   padding: 0px;
   margin: 0px;
@@ -8,6 +10,9 @@
   color: #2d3a4b;
 }
 
+body {
+  width: 100%;
+}
 
 ul, li {
   margin-block-start: 0;

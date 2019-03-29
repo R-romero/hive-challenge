@@ -1,11 +1,35 @@
 @mixin mobile-L {
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 955px) {
+    @content;
+  }
+}
+
+@mixin mobile-M {
+  @media only screen and (max-width: 606px) {
+    @content;
+  }
+}
+
+@mixin mobile-S {
+    @media only screen and (max-width: 425px) {
+      @content;
+    }
+}
+
+@mixin mobile-SS{
+  @media only screen and (max-width: 400px) {
     @content;
   }
 }
 
 @mixin desktop-S {
-  @media only screen and (min-width: 1680px) {
+  @media only screen and (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin desktop-L {
+  @media only screen and (max-width: 1685px) {
     @content;
   }
 }
