@@ -15,4 +15,4 @@ Extras:
 - [ ] Generate optimized build
 
 ## Usage
-Gulp has a task to set everything up, simply navigate to folder and `gulp`.
+Gulp has a task to set everything up, simply navigate to folder `npm i` to install dependencies and `gulp` to start sccs compilation + browsersync.
