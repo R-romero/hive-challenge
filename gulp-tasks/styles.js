@@ -1,9 +1,5 @@
 // packages
-const autoprefixer = require("autoprefixer");
-const cssnano = require("cssnano");
 const gulp = require("gulp");
-const postcss = require("gulp-postcss");
-const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 
 // CSS task
