@@ -1,9 +1,9 @@
 const path = require("path");
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   output: {
-    filename: "main.bundle.js"
+    filename: "index.js"
   },
   module: {
     rules: [
