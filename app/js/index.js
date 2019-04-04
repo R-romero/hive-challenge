@@ -29,6 +29,7 @@ $(document).ready(function() {
 
 function check_view() {
   //calculate current viewport
+  console.log('hehe')
   var window_height = $window.height();
   var window_top_position = $window.scrollTop();
   var window_bottom_position = window_top_position + window_height;
@@ -56,7 +57,7 @@ function check_view() {
   });
 }
 
-$window.on("scroll resize", check_view);
+$window.on("scroll", check_view);
 
 // toggle for mobile menu
 $(".menu-toggle").click(function() {
