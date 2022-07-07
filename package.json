@@ -30,7 +30,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "sharp": "^0.21.3",
     "webpack": "^4.29.6",
     "webpack-stream": "^5.2.1"
